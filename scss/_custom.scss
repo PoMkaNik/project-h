@@ -8,7 +8,7 @@ $body-bg: $secondary-color;
 .top-bar {
   height: 60px !important;
   padding-top: 8px;
-  background: $primary-color;
+  background: $primary-color !important;
 }
 
 .login-box {
@@ -82,6 +82,15 @@ footer {
   p {
     color: #ffffff;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 25px;
+  }
+}
+
+.top-btn {
+  background: $secondary-color !important;
+  margin-right: 20px !important;
+
+  &:hover {
+    background: $hover-color !important;
   }
 }

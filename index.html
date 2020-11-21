@@ -13,6 +13,44 @@
   <div class="top-bar">
     <div class="row">
       <img src="img/logo.png" alt="logo">
+      <a href="#!" class="button right top-btn" data-reveal-id="add-form">Add Project</a>
+      <a href="login.html" class="button right top-btn">Logout</a>
+
+      <div id="add-form" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+        <h3>Edit Project</h3>
+        <form>
+          <div class="row">
+            <div class="large-12 columns">
+              <label>
+                Project name
+                <input type="text" id="project-name" name="project-name">
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <label>
+                Category
+                <select name="category" id="category">
+                  <option value="#" selected>Select category</option>
+                  <option value="web">Web Development</option>
+                  <option value="design">Graphic Design</option>
+                  <option value="seo">SEO</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <label>
+                Notes
+                <textarea name="notes" id="notes"></textarea>
+              </label>
+            </div>
+          </div>
+          <input type="submit" value="Save project" class="button">
+        </form>
+      </div>
     </div>
   </div>
 
