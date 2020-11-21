@@ -6,7 +6,7 @@ $active-color: #333;
 $body-bg: $secondary-color;
 
 .top-bar {
-  height: 60px;
+  height: 60px !important;
   padding-top: 8px;
   background: $primary-color;
 }
@@ -17,4 +17,71 @@ $body-bg: $secondary-color;
   padding: 30px;
   margin: 0 auto;
   margin-top: 30px;
+}
+
+.icons {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  .svg-inline--fa {
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    font-size: 70px;
+  }
+
+  label {
+    color: #fff;
+  }
+}
+
+.item {
+  text-align: center;
+  background: $primary-color;
+  overflow: auto;
+  width: 100%;
+  height: auto;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 10px;
+
+  &:hover {
+    background: $hover-color;
+  }
+
+  &.active {
+    background: $active-color;
+  }
+}
+
+.white-bg {
+  background: #ffffff;
+  overflow: auto;
+  padding: 20px;
+}
+
+.primary-bg {
+  background: $primary-color;
+  overflow: auto;
+  padding: 20px;
+
+  label {
+    color: #ffffff;
+  }
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+footer {
+  background: $primary-color;
+  height: 80px;
+  margin-top: 30px;
+
+  p {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+  }
 }

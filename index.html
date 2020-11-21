@@ -4,12 +4,112 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Foundation</title>
+  <title>Welcome</title>
   <link rel="stylesheet" href="css/app.css" />
   <script src="bower_components/modernizr/modernizr.js"></script>
 </head>
 
 <body>
+  <div class="top-bar">
+    <div class="row">
+      <img src="img/logo.png" alt="logo">
+    </div>
+  </div>
+
+  <div class="icons">
+    <div class="row">
+      <div class="large-2 small-12 columns">
+        <a href="index.html" class="item active">
+          <i class="fa fa-tasks"></i>
+          <label>Projects</label>
+        </a>
+      </div>
+      <div class="large-2 small-12 columns">
+        <a href="categories.html" class="item">
+          <i class="fa fa-folder"></i>
+          <label>Categories</label>
+        </a>
+      </div>
+      <div class="large-2 small-12 columns">
+        <a href="users.html" class="item">
+          <i class="fa fa-user"></i>
+          <label>Users</label>
+        </a>
+      </div>
+      <div class="large-2 small-12 columns">
+        <a href="messages.html" class="item">
+          <i class="far fa-paper-plane"></i>
+          <label>Messages</label>
+        </a>
+      </div>
+      <div class="large-2 small-12 columns">
+        <a href="files.html" class="item">
+          <i class="fa fa-paperclip"></i>
+          <label>Files</label>
+        </a>
+      </div>
+      <div class="large-2 small-12 columns">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-8 columns white-bg">
+      <h3>Latest Projects</h3>
+      <table>
+        <thead>
+          <tr>
+            <th width="300">Name</th>
+            <th>Category</th>
+            <th>Start</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Project H</td>
+            <td>Web Development</td>
+            <td>04/15/2020</td>
+            <td><a href="project.html" class="button tiny mb-0">Launch</a></td>
+          </tr>
+          <tr>
+            <td>Project W</td>
+            <td>Graphic Design</td>
+            <td>04/19/2020</td>
+            <td><a href="project.html" class="button tiny mb-0">Launch</a></td>
+          </tr>
+          <tr>
+            <td>Project M</td>
+            <td>SEO</td>
+            <td>03/10/2020</td>
+            <td><a href="project.html" class="button tiny mb-0">Launch</a></td>
+          </tr>
+          <tr>
+            <td>Project P</td>
+            <td>Marketing</td>
+            <td>01/11/2020</td>
+            <td><a href="project.html" class="button tiny mb-0">Launch</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="large-3 columns primary-bg">
+      <form>
+        <label>
+          Search Project
+          <input type="text">
+        </label>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="row">
+      <div class="large-12 columns">
+        <p>Copyright &copy; ProjectH 2020</p>
+      </div>
+    </div>
+  </footer>
 
 
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"
@@ -18,6 +118,8 @@
   <script>
     $(document).foundation();
   </script>
+  <!-- Font Awesome -->
+  <script src="js/all.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 
