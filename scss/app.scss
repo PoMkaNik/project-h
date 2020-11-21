@@ -1,5 +1,6 @@
-@import "settings";
-@import "foundation";
+@import 'custom';
+@import 'settings';
+@import '../bower_components/foundation/scss/foundation.scss';
 
 // Or selectively include components
 // @import
