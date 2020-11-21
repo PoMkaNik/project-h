@@ -1,0 +1,149 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Details</title>
+  <link rel="stylesheet" href="css/app.css" />
+  <script src="bower_components/modernizr/modernizr.js"></script>
+</head>
+
+<body>
+  <div class="top-bar">
+    <div class="row">
+      <img src="img/logo.png" alt="logo">
+    </div>
+  </div>
+
+  <div class="icons">
+    <div class="row">
+      <div class="large-2 medium-4 small-12 columns">
+        <a href="index.html" class="item active">
+          <i class="fa fa-tasks"></i>
+          <label>Projects</label>
+        </a>
+      </div>
+      <div class="large-2 medium-4 small-12 columns">
+        <a href="categories.html" class="item">
+          <i class="fa fa-folder"></i>
+          <label>Categories</label>
+        </a>
+      </div>
+      <div class="large-2 medium-4 small-12 columns">
+        <a href="users.html" class="item">
+          <i class="fa fa-user"></i>
+          <label>Users</label>
+        </a>
+      </div>
+      <div class="large-2 medium-4 small-12 columns">
+        <a href="messages.html" class="item">
+          <i class="far fa-paper-plane"></i>
+          <label>Messages</label>
+        </a>
+      </div>
+      <div class="large-2 medium-4 small-12 columns">
+        <a href="files.html" class="item">
+          <i class="fa fa-paperclip"></i>
+          <label>Files</label>
+        </a>
+      </div>
+      <div class="large-2  medium-4 small-12 columns">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-8 columns white-bg">
+      <h3>Project H <a href="#" class="button tiny right" data-reveal-id="edit-form">edit</a></h3>
+      <div id="edit-form" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true"
+        role="dialog">
+        <h3>Edit Project</h3>
+        <form>
+          <div class="row">
+            <div class="large-12 columns">
+              <label>
+                Project name
+                <input type="text" value="Project H" id="project-name" name="project-name">
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <label>
+                Category
+                <select name="category" id="category">
+                  <option value="web" selected>Web Development</option>
+                  <option value="design">Graphic Design</option>
+                  <option value="seo">SEO</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <label>
+                Notes
+                <textarea name="notes" id="notes">This is the notes to the Project H</textarea>
+              </label>
+            </div>
+          </div>
+          <input type="submit" value="Save project" class="button">
+        </form>
+      </div>
+
+
+      <strong>Status:</strong> 65% complete (<a href="#" data-reveal-id="status">change</a>)
+
+      <div id="status" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+        <div class="range-slider" data-slider>
+          <span class="range-slider-handle" role="slider" tabindex="0"></span>
+          <span class="range-slider-active-segment"></span>
+          <input type="hidden">
+        </div>
+      </div>
+
+      <div class="progress large-12 success round">
+        <span class="meter" style="width: 65%"></span>
+      </div>
+      <br>
+      <div>
+        <strong>Category: </strong>Web Development
+      </div>
+      <br>
+      <div>
+        <h3>Notes: </h3>
+        <p>This is the notes to the Project H</p>
+      </div>
+    </div>
+    <div class="large-3 columns primary-bg">
+      <form>
+        <label>
+          Search Project
+          <input type="text">
+        </label>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="row">
+      <div class="large-12 columns">
+        <p>Copyright &copy; ProjectH 2020</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="bower_components/foundation/js/foundation.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+  <!-- Font Awesome -->
+  <script src="js/all.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
