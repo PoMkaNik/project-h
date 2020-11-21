@@ -1,0 +1,20 @@
+$primary-color: #062242;
+$secondary-color: #164066;
+$hover-color: #000;
+$active-color: #333;
+
+$body-bg: $secondary-color;
+
+.top-bar {
+  height: 60px;
+  padding-top: 8px;
+  background: $primary-color;
+}
+
+.login-box {
+  background-color: #ffffff;
+  width: 500px;
+  padding: 30px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
